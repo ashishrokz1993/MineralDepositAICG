@@ -204,7 +204,7 @@ def inputFiles():
                     XYZsensorIndividual =XYZsensorIndividual[ZsensorfilterIndividual==gv.sectionalZ]
                     ValsensorIndividual =ValsensorIndividual[ZsensorfilterIndividual==gv.sectionalZ]
                     AccuracysensorIndividual = AccuracysensorIndividual[ZsensorfilterIndividual==gv.sectionalZ]
-                SensorNode = Grid.GridDictionaryUpdating(XYZsensorIndividual,ValsensorIndividual,name='SensorData'+str(sensorIndex+1))
+                SensorNode = Grid.GridDictionary(XYZsensorIndividual,ValsensorIndividual,name='SensorData'+str(sensorIndex+1))
                 for xyz in range(len(XYZsensorIndividual)):
                     SensorNode.dictionary[tuple(XYZsensorIndividual[xyz])]=ValsensorIndividual[xyz]
                     indexID = DictionaryGrid.dictionary.get(tuple(XYZsensorIndividual[xyz]),-999)               
