@@ -21,6 +21,7 @@ ResultPlotting - Has the functions for plotting results
 Utilities - Has the functions for computing reward
 Validation - Has the functions for validating the histogram of simulated models
 Visualize - Has the  functions to generate GIF for real-time display
+Simulations - Has the method to generate initial simualations
 
 
 Required Libraries:
